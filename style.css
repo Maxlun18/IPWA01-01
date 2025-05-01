@@ -50,10 +50,31 @@ footer {
   background: #466d8d;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer nav ul li a:hover {
+  text-decoration: underline;
 }
 
 .logo-container {
@@ -66,7 +87,7 @@ footer {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 50px; /* Kleinere Breite */
   height: auto;
   margin-right: 1rem;
 }
