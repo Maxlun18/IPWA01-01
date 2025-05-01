@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script src="loader.js"></script>
+  <!-- jsPDF + html2canvas über CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div id="nav"></div>
+
+  <main class="container py-5" id="confirmationContent">
+    <!-- Wird von confirmation.js befüllt -->
+  </main>
+
+  <div class="container py-3 d-flex justify-content-between">
+    <button id="exportPdf" class="btn btn-secondary">
+      Bestätigung als PDF
+    </button>
+    <button id="newDonation" class="btn btn-primary">
+      Neue Spende registrieren
+    </button>
+  </div>
+
+  <div id="footer"></div>
+  <script src="confirmation.js"></script>
+</body>
+</html>

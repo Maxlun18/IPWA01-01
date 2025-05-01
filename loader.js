@@ -68,4 +68,3 @@ async function loadHead(url) {
     });
     loadComponent("footer", "components/footer.html");
   });
-  

@@ -4,27 +4,142 @@
   <script src="loader.js"></script>
 </head>
 <body>
-    <div id="nav"></div>
+  <div id="nav"></div>
 
-  <main>
-    <section id="form-section">
-      <h2>Kleiderspende registrieren</h2>
-      <form>
-        <label for="name">Dein Name:</label>
-        <input type="text" id="name" name="name"><br>
+  <main class="container py-5">
+    <div class="container">
+      <h1>Kleiderspende registrieren</h1>
+      <form id="donationForm" novalidate>
+        <!-- a) Modus-Auswahl -->
+        <div class="mb-3">
+          <label class="form-label">Übergabe oder Abholung?</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input"
+                     type="radio"
+                     name="mode"
+                     id="modeOnSite"
+                     value="onsite"
+                     required>
+              <label class="form-check-label" for="modeOnSite">
+                Geschäftsstelle
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input"
+                     type="radio"
+                     name="mode"
+                     id="modePickup"
+                     value="pickup">
+              <label class="form-check-label" for="modePickup">
+                Abholung
+              </label>
+            </div>
+          </div>
+        </div>
 
-        <label for="region">Krisenregion wählen:</label>
-        <select id="region" name="region">
-          <option value="ukraine">Ukraine</option>
-          <option value="gaza">Gaza</option>
-          <option value="syrien">Syrien</option>
-        </select><br>
+        <!-- b1) Art der Kleidung (Mehrfachauswahl) -->
+        <div class="mb-3">
+          <label for="clothingType" class="form-label">Art der Kleidung</label>
+          <select id="clothingType"
+                  name="clothingType"
+                  class="form-select"
+                  multiple
+                  required>
+            <option value="Jacken">Jacken</option>
+            <option value="Hosen">Hosen</option>
+            <option value="Schuhe">Schuhe</option>
+            <option value="Sonstiges">Sonstiges</option>
+          </select>
+          <div class="form-text">
+            Mit gedrückter Strg-/Cmd-Taste mehrere auswählen.
+          </div>
+        </div>
+        <!-- b2) Freitext für "Sonstiges" Kleidung -->
+        <div id="clothingOtherDiv" class="mb-3 d-none">
+          <label for="clothingOther" class="form-label">
+            Bitte genauer beschreiben
+          </label>
+          <input type="text"
+                 id="clothingOther"
+                 name="clothingOther"
+                 class="form-control">
+        </div>
 
-        <button type="submit">Spende registrieren</button>
+        <!-- b3) Krisengebiet (Einfachauswahl) -->
+        <div class="mb-3">
+          <label for="crisisRegion" class="form-label">Krisengebiet</label>
+          <select id="crisisRegion"
+                  name="crisisRegion"
+                  class="form-select"
+                  required>
+            <option value="" disabled selected>– auswählen –</option>
+            <option>Ukraine</option>
+            <option>Syrien</option>
+            <option>Afghanistan</option>
+            <option>Sudan</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <!-- b4) Freitext für "Sonstiges" Krisengebiet -->
+        <div id="crisisOtherDiv" class="mb-3 d-none">
+          <label for="crisisOther" class="form-label">
+            Anderes Krisengebiet
+          </label>
+          <input type="text"
+                 id="crisisOther"
+                 name="crisisOther"
+                 class="form-control">
+        </div>
+
+        <!-- c) Hinweis Geschäftsstelle -->
+        <div id="onSiteNotice"
+             class="alert alert-info d-none">
+          Spende wird vor Ort abgegeben – Ort ist vorausgewählt.
+        </div>
+
+        <!-- d) Abholadresse nur bei pickup -->
+        <div id="pickupFields" class="d-none">
+          <div class="mb-3">
+            <label for="street" class="form-label">Straße &amp; Nr.</label>
+            <input type="text"
+                   id="street"
+                   name="street"
+                   class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="postalCode"
+                   class="form-label">Postleitzahl</label>
+            <input type="text"
+                   id="postalCode"
+                   name="postalCode"
+                   class="form-control"
+                   pattern="^\d{5}$">
+            <div class="invalid-feedback">
+              Bitte 5-stellige PLZ eingeben.
+            </div>
+            <div id="postcodeError"
+                 class="text-danger small mt-1 d-none">
+              Abhol-PLZ ist nicht im Umkreis.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label">Ort</label>
+            <input type="text"
+                   id="city"
+                   name="city"
+                   class="form-control">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Registrieren
+        </button>
       </form>
-    </section>
+    </div>
   </main>
 
   <div id="footer"></div>
+  <script src="form.js"></script>
 </body>
 </html>
