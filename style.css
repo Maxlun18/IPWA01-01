@@ -6,7 +6,7 @@
   --main-bg: #ff9151;
   --header-footer-bg: #466d8d;
   --text-light: #ffffff;
-  --highlight: #dce6f1;
+  --highlight: #0055af;
   --form-bg: #ffdab8;
 }
 
@@ -20,7 +20,7 @@ body {
   padding: 0;
   line-height: 1.5;
   background-color: var(--main-bg);
-  color: #222;
+  color: #000000;
 }
 
 /* ===============================
@@ -94,6 +94,20 @@ main {
   padding: 1rem;
 }
 
+/* === Body-Link-Styling === */
+
+main a {
+  color: #646363; 
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+main a:hover {
+  color: #264653;
+  text-decoration: none;
+}
+
+
 /* ===============================
    LOGO
 ================================= */
@@ -132,7 +146,7 @@ button {
   width: 100%;
   padding: 0.75rem;
   margin: 0.5rem 0;
-  border: 1px solid #ccc;
+  border: 1px solid #caa68f;
   border-radius: 5px;
   font-size: 1rem;
   font-family: inherit;
@@ -149,6 +163,8 @@ button {
 button:hover {
   background-color: #365a74;
 }
+
+
 
 /* ===============================
    RESPONSIVE
@@ -175,3 +191,4 @@ button:hover {
     width: 90%;
   }
 }
+

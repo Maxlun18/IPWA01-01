@@ -17,22 +17,26 @@
     }
   
     .navbar-toggler-icon {
-      filter: invert(1); /* macht Icon weiß */
+      filter: invert(1);
+    }
+  
+    .navbar-brand img {
+      height: 80px;
+      margin: 0 auto;
+      display: block;
     }
   </style>
   
   <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
+    <div class="container d-flex flex-column align-items-center">
       <a class="navbar-brand" href="/">
-        <img src="/components/logo.png" alt="Logo" style="height: 40px;">
+        <img src="/components/logo.png" alt="Logo"> Kleiderspende Portal Greifswald
       </a>
   
-      <!-- Hamburger Button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <!-- Navigationslinks -->
       <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
