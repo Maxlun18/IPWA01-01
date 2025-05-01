@@ -1,0 +1,46 @@
+<style>
+    .custom-navbar {
+      background-color: #466b8d;
+    }
+  
+    .custom-navbar .nav-link,
+    .custom-navbar .navbar-brand {
+      color: #ffffff !important;
+    }
+  
+    .custom-navbar .nav-link:hover {
+      text-decoration: underline;
+    }
+  
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    .navbar-toggler-icon {
+      filter: invert(1); /* macht Icon weiß */
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/components/logo.png" alt="Logo" style="height: 40px;">
+      </a>
+  
+      <!-- Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigationslinks -->
+      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link" href="form.html">Kleiderspende</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
