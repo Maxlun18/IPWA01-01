@@ -21,3 +21,5 @@ b) Entwickle unter Zuhilfenahme moderner CSS- und/oder JavaScript-Frameworks ein
     i. Ist eine Registrierung erfolgreich – egal ob vor Ort oder als Abholung, wird das den Nutzenden auf einer abschließenden Seite unter Angabe aller Daten (Art der Kleider, Krisengebiet, Datum, Uhrzeit und Ort) bestätigt.
 
 c) Dokumentiere Dein Ergebnis schriftlich und lege den Code, falls nicht bereits im Schritt 2 geschehen, im Code-Repository ab.
+
+Quellen:
