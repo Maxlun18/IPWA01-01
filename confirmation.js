@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const date = dt.toLocaleDateString("de-DE");
     const time = dt.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" });
     const location = d.mode === "onsite"
-      ? "Geschäftsstelle"
+      ? "Geschäftsstelle Greifswald"
       : `${d.street}, ${d.postalCode} ${d.city}`;
   
     // Darstellung der Kleidung
