@@ -1,5 +1,5 @@
 /* ===============================
-   GLOBAL STYLES
+   Allgemeine Styles
 ================================= */
 
 :root {
@@ -16,6 +16,7 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  text-align: justify;
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -24,7 +25,7 @@ body {
 }
 
 /* ===============================
-   HEADER & FOOTER
+   Header & Footer
 ================================= */
 
 header,
@@ -49,7 +50,7 @@ footer {
 }
 
 /* ===============================
-   NAVIGATION
+   Navigation
 ================================= */
 
 header nav ul,
@@ -87,14 +88,14 @@ footer nav ul li a:hover,
 }
 
 /* ===============================
-   MAIN CONTENT
+   Hauptinhalt
 ================================= */
 
 main {
   padding: 1rem;
 }
 
-/* === Body-Link-Styling === */
+/* === Styling für Links === */
 
 main a {
   color: #646363; 
@@ -109,7 +110,7 @@ main a:hover {
 
 
 /* ===============================
-   LOGO
+   Logo
 ================================= */
 
 .logo-container {
@@ -128,7 +129,7 @@ main a:hover {
 }
 
 /* ===============================
-   FORMS & INPUTS
+   Formulare & Eingabefelder
 ================================= */
 
 form {
@@ -167,7 +168,7 @@ button:hover {
 
 
 /* ===============================
-   RESPONSIVE
+   Responsives Design
 ================================= */
 
 @media (max-width: 768px) {

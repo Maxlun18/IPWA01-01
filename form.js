@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const crisisOtherDiv = document.getElementById("crisisOtherDiv");
     const crisisOther = document.getElementById("crisisOther");
   
-    // PLZ-Präfix der Geschäftsstelle (z.B. "12")
-    const businessPostalPrefix = "12";
+    // PLZ-Präfix der Geschäftsstelle (z.B. "17" für Greifswald)
+    const businessPostalPrefix = "17";
   
     // Umschalten Geschäftsstelle vs. Abholung
     function updateFormMode() {

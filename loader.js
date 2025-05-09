@@ -64,7 +64,7 @@ async function loadHead(url) {
   document.addEventListener("DOMContentLoaded", () => {
     loadHead("components/head.html");
     loadComponent("nav", "components/nav.html").then(() => {
-      highlightActiveNav(); // wird erst nach dem Laden der Nav ausgeführt
+      highlightActiveNav(); // wird erst nach dem Laden der Nav HTML ausgeführt
     });
     loadComponent("footer", "components/footer.html");
   });
